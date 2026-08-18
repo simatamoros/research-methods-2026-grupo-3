@@ -1,0 +1,108 @@
+{
+  "type": "bundle",
+  "id": "bundle--442ccf3a-7666-483c-90dc-c1bac17d6679",
+  "objects": [
+    {
+      "type": "location",
+      "spec_version": "2.1",
+      "id": "location--31282059-6a69-542d-a08f-3a1d18565682",
+      "name": "Honduras",
+      "country": "HN",
+      "latitude": 15.2,
+      "longitude": -86.24
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--1644ad9a-5d92-50a0-8873-4e5a68798c4b",
+      "name": "FamousSparrow",
+      "description": "China-aligned APT targeting Honduran government infrastructure via SparrowDoor and ShadowPad.",
+      "threat_actor_types": [
+        "cyberespionage",
+        "state-sponsored"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--dd0fb796-9b09-5af2-9263-d33a64e785b5",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--1644ad9a-5d92-50a0-8873-4e5a68798c4b",
+      "target_ref": "location--31282059-6a69-542d-a08f-3a1d18565682"
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--d8808810-45ba-5224-a142-0883dc351fdc",
+      "name": "JadeProx",
+      "description": "China-nexus APT targeting government institutions in Honduras.",
+      "threat_actor_types": [
+        "cyberespionage",
+        "state-sponsored"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--1869d85d-ee28-5b04-b83f-100779bdafe6",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--d8808810-45ba-5224-a142-0883dc351fdc",
+      "target_ref": "location--31282059-6a69-542d-a08f-3a1d18565682"
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--cf46f258-5aaa-51b9-b567-ffea7ffdf3b4",
+      "name": "SHINYHUNTERS",
+      "description": "Major underground broker responsible for 22.3% of documented incidents in Honduras.",
+      "threat_actor_types": [
+        "criminal",
+        "data-broker"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--8bc491d3-08a9-56e3-b61c-2504411f70ec",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--cf46f258-5aaa-51b9-b567-ffea7ffdf3b4",
+      "target_ref": "location--31282059-6a69-542d-a08f-3a1d18565682"
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--abf41821-9303-5137-8288-bdf7040a8918",
+      "name": "Qilin",
+      "description": "Ransomware group behind multiple critical infrastructure attacks in Honduras.",
+      "threat_actor_types": [
+        "ransomware"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--2d506ee3-df46-5a33-8cf9-534d73cd61fb",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--abf41821-9303-5137-8288-bdf7040a8918",
+      "target_ref": "location--31282059-6a69-542d-a08f-3a1d18565682"
+    },
+    {
+      "type": "threat-actor",
+      "spec_version": "2.1",
+      "id": "threat-actor--ac150fb3-4e86-5c29-afd2-bd4608ce2cb6",
+      "name": "Cerberus Team",
+      "description": "Info-stealer trafficking ecosystem distributing Vidar, RedLine, Lumma, and Rhadamanthys.",
+      "threat_actor_types": [
+        "traffic-broker"
+      ]
+    },
+    {
+      "type": "relationship",
+      "spec_version": "2.1",
+      "id": "relationship--17ad9273-2473-5d55-9181-dacdf52dbae4",
+      "relationship_type": "targets",
+      "source_ref": "threat-actor--ac150fb3-4e86-5c29-afd2-bd4608ce2cb6",
+      "target_ref": "location--31282059-6a69-542d-a08f-3a1d18565682"
+    }
+  ]
+}
